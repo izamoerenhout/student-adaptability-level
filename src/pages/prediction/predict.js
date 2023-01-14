@@ -5,31 +5,32 @@ import Result from "./fragments/result";
 import { Link } from "react-router-dom";
 
 function Predict() {
-  let { values, onClick, onSubmit, onChange, set } = new PredictLogic();
+  // let { values, onClick, onSubmit, onChange, set } = new PredictLogic();
+  let { values, form, result } = new PredictLogic();
 
   return (
     <>
       <div className="header">
         <div className="container">
-          <div className="col-12">
-            <div className="card">
+          {/* <div className="col-12">
+            <div className="card"> */}
               {/* SHOW PREDICTION FORM */}
               {/* {values.result === undefined && !values.isLoading && (
                 <Form logic={{ values, onClick, onSubmit, onChange, set }} />
               )} */}
 
-              {values.result === undefined && !values.isLoading && (
-                <Form logic={{ values, onClick, onSubmit, onChange, set }} />
+              {result.data === undefined && !values.isLoading && (
+                <Form logic={form} />
               )}
 
               {/* SHOW RESULT FROM PREDICTION */}
-              {values.result !== undefined && (
-                <Result logic={{ values, onClick, onSubmit, onChange, set }} />
+              {result.data !== undefined && (
+                <Result logic={result} />
               )}
 
               {/* SHOW LOADING SPINNER */}
               {values.isLoading && (
-                <Loading logic={{ values, onClick, onSubmit, onChange, set }} />
+                <Loading logic={{ form, values }} />
               )}
 
               {/* SHOW LOADING SPINNER */}
@@ -41,8 +42,8 @@ function Predict() {
                   Something went wrong!
                 </div>
               )}
-            </div>
-          </div>
+            {/* </div>
+          </div> */}
         </div>
       </div>
     </>

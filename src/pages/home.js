@@ -34,15 +34,6 @@ function Home() {
           </Link>
         </div>
       </div>
-
-      {/* <div className="container">
-        <div className="col-12 text-start">
-          <h2 className="sub-title-3">Hoe werkt onze tool?</h2>
-          <p>
-            Tekst
-          </p>
-        </div>
-      </div> */}
     </>
   );
 }

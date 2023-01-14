@@ -1,12 +1,14 @@
-import { v4 as uuid } from 'uuid';
+// import { v4 as uuid } from "uuid";
 
 function Result(props) {
-    let { values, onClick } = props.logic;
+  const result = props.logic;
 
-    return(
-        <>
-        </>
-    )
+  return (
+    <>
+      <h1>Result</h1>
+      {result.data['adaptability']}
+    </>
+  );
 }
 
 export default Result;
