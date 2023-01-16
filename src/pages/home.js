@@ -7,7 +7,7 @@ function Home() {
       <div className="header">
         <div className="container">
           <div className="row">
-            <div className=".col-8 .col-md-4">
+            <div className="col-lg-8 col-md-4">
               <h1>Test your adaptability level!</h1>
               <h3>
                 How well can you adapt to online education or working online?
