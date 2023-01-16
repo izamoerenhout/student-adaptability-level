@@ -1,13 +1,12 @@
 import { useState } from "react";
 
 function PredictLogic() {
-  const [data, setData] = useState(undefined);
+  const [res, setResult] = useState(undefined);
   const [errors, setErrors] = useState(undefined);
   const [showExplanation, setShowExplanation] = useState(false);
 
-  // Show loading or failed
+  // Show loading
   const [isLoading, setIsLoading] = useState(false);
-  const [isFailed, setIsFailed] = useState(false);
 
   // Features
   const [gender, setGender] = useState(undefined);
@@ -28,9 +27,6 @@ function PredictLogic() {
   const onSubmit = async (event) => {
     // The form has default behavior that we don't need
     event.preventDefault();
-
-    // Reset isFailed
-    setIsFailed(false);
 
     // Show loading bar
     setIsLoading(true);
@@ -60,23 +56,16 @@ function PredictLogic() {
     console.log(options);
     console.log(response);
 
-    try {
-      console.log("try");
+    const res = await response.json();
+    console.log(res);
 
-      data = await response.json();
-      console.log(data);
-
-      if (result.errors.length > 0) {
-        console.log("error");
-        setErrors(data.errors);
-        return;
-      }
-    } catch {
-      console.log("catch");
-      setIsFailed(true);
+    if (res.errors.length > 0) {
+      console.log("error");
+      setErrors(res.errors);
+      return;
     }
 
-    setData(data);
+    setResult(res);
     setErrors(undefined);
     setIsLoading(false);
   };
@@ -85,52 +74,15 @@ function PredictLogic() {
     setShowExplanation(!showExplanation);
   };
 
-  // return {
-  //     values: {
-  //         label,
-  //         icon,
-  //         result,
-  //         isLoading,
-  //         isFailed
-  //     },
-  //     onClick: {
-  //         fileUpload,
-  //         reset,
-  //         enableShapImg
-  //     },
-  //     onSubmit: {
-  //         predict
-  //     },
-  //     onChange: {
-  //         fileChange
-  //     },
-  //     set: {
-  //         gender: setGender,
-  //         age: setAge,
-  //         education: setEducation,
-  //         institution: setInstitution,
-  //         student: setStudent,
-  //         location: setLocation,
-  //         load: setLoad,
-  //         financial: setFinancial,
-  //         internet: setInternet,
-  //         network: setNetwork,
-  //         duration: setDuration,
-  //         lms: setLms,
-  //         device: setDevice
-  //     }
-  // }
-
   return {
     result: {
-        data,
+        res,
         explanation: {
             show: showExplanation,
             toggle: toggleExplanation,
           },
     },
     values: {
-      isFailed,
       isLoading,
     },
     form: {

@@ -12,19 +12,13 @@ function Predict() {
     <>
       <div className="header">
         <div className="container">
-          {/* <div className="col-12">
-            <div className="card"> */}
               {/* SHOW PREDICTION FORM */}
-              {/* {values.result === undefined && !values.isLoading && (
-                <Form logic={{ values, onClick, onSubmit, onChange, set }} />
-              )} */}
-
-              {result.data === undefined && !values.isLoading && (
+              {result.res === undefined && !values.isLoading && (
                 <Form logic={form} />
               )}
 
               {/* SHOW RESULT FROM PREDICTION */}
-              {result.data !== undefined && (
+              {result.res !== undefined && (
                 <Result logic={result} />
               )}
 
@@ -33,17 +27,6 @@ function Predict() {
                 <Loading logic={{ form, values }} />
               )}
 
-              {/* SHOW LOADING SPINNER */}
-              {values.isFailed && (
-                <div
-                  className="alert alert-danger"
-                  role="alert"
-                >
-                  Something went wrong!
-                </div>
-              )}
-            {/* </div>
-          </div> */}
         </div>
       </div>
     </>

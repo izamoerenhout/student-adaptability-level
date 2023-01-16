@@ -5,8 +5,12 @@ function Result(props) {
 
   return (
     <>
-      <h1>Result</h1>
-      {result.data['adaptability']}
+      <div className="header">
+        <div className="container">
+          <h1>Result</h1>
+          {result.res["adaptability"]}
+        </div>
+      </div>
     </>
   );
 }
