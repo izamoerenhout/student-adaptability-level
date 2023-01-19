@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function Form(props) {
   const form = props.logic;
 

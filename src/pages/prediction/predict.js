@@ -2,10 +2,8 @@ import PredictLogic from "./predict-logic";
 import Loading from "./fragments/loading";
 import Form from "./fragments/form";
 import Result from "./fragments/result";
-import { Link } from "react-router-dom";
 
 function Predict() {
-  // let { values, onClick, onSubmit, onChange, set } = new PredictLogic();
   let { values, form, result } = new PredictLogic();
 
   return (
