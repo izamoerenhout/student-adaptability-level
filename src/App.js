@@ -12,7 +12,7 @@ import About from "./pages/about";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/student-adaptability-level">
         <Template>
           <Routes>
             <Route exact path="/" element={<Home />} />

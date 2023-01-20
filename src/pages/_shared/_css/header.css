@@ -2,10 +2,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: 70px;
 }
 
 .header .container {
-    padding: 40px 15px;
+    padding: 0px 15px;
 }
 
 .header .container .row {

@@ -1,15 +1,15 @@
 .nav-holder {
     position: absolute;
     z-index: 1;
-
     left: 0;
     right: 0;
+    top: 0;
 }
 
 .navbar {
-    /* background: transparent !important; */
     background-color: #af8fe9;
     padding-block: 12px;
+    height: 25px;
 }
 
 .navbar-link {
