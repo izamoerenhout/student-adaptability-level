@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function About() {
   return (
     <>
@@ -16,6 +18,13 @@ function About() {
                   predicted how well you can adapt to taking classes online or
                   working from home.
                 </p>
+
+                <Link
+                  to="/predict"
+                  className="btn"
+                >
+                  <span>Click here to start</span>
+                </Link>
               </div>
 
               <div className="set">

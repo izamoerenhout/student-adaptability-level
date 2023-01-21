@@ -27,3 +27,7 @@ form span {
     width: 60%;
     padding: 15px 25px
 }
+
+li {
+    margin-bottom: 10px;
+}

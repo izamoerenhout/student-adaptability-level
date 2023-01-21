@@ -37,8 +37,7 @@ function Home() {
 
           <div className="inside">
             <div className="info-text">
-              <h3>How does this work?</h3>
-              <p>Tekst hier!</p>
+              <h3>How does it work?</h3>
 
               <Link
                 to="/about"
