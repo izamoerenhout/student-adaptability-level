@@ -12,13 +12,24 @@
     height: 25px;
 }
 
+.navbar-title {
+    background: none;
+    padding: 10px 50px 10px 20px;
+    /* padding: 10px 20px; */
+    margin: 0px 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+
+    transition: .5s all ease-in-out;
+}
+
 .navbar-link {
     background: none;
     padding: 10px 20px;
     border-radius: 10px;
     margin: 0px 5px;
     font-weight: bold;
-    font-family: 'Roboto';
     text-decoration: none;
     color: #fff;
 

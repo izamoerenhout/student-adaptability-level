@@ -9,6 +9,12 @@
     padding: 0px 15px;
 }
 
+.header .container .inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .header .container .info-text {
     width: 60%;
     padding: 15px 25px 75px
@@ -17,7 +23,6 @@
 .header .container .predict {
     padding-top: 15px;
 }
-
 
 .header .container h1 {
     font-weight: bold;

@@ -7,11 +7,14 @@ function Template(props) {
       <div className="nav-holder">
         <div className="container">
           <nav className="navbar">
-          <Link
+            <Link className="navbar-title">
+              Student Adaptability Level
+            </Link>
+            <Link
               to="/"
               className="navbar-link"
             >
-              Student Adaptability Level
+              Home
             </Link>
             <Link
               to="/predict"

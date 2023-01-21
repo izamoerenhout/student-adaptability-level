@@ -1,6 +1,8 @@
 @import './_css/fonts.css';
 @import './_css/nav.css';
 @import './_css/header.css';
+@import './_css/form.css';
+@import './_css/images.css';
 
 body {
     background: #eee;
@@ -25,8 +27,4 @@ footer {
     border: none;
     border-radius: 10px;
     color: #333;
-}
-
-.form-error {
-    color: red
 }
