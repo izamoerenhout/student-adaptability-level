@@ -7,13 +7,15 @@ function Result(props) {
     <>
       <div className="header">
         <div className="container predict">
-          <h1>Result</h1>
-          {result.res["adaptability"]}
-
-          <img src={"data:image/png;base64, " + result.res["shap-img"]} alt="shap" height={"300px"} />
-
-          <p>komt de uitleg van de voorspelling</p>
-
+          <h1>Your result</h1>
+          <h3>Your adaptability level is: {result.res["adaptability"]}</h3>
+          <h4></h4>
+          <img
+            src={"data:image/png;base64, " + result.res["shap-img"]}
+            alt="shap"
+            className="img-shap"
+          />
+          <p>How does this shap image work?</p>
           Informatie: {result.res["content"]["Gender"]}
         </div>
       </div>
