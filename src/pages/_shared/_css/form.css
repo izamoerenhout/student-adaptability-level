@@ -18,3 +18,12 @@
 .form-error {
     color: red
 }
+
+form span {
+    color:darkgrey
+}
+
+.trust-text {
+    width: 60%;
+    padding: 15px 25px
+}

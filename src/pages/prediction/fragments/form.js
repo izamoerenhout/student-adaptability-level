@@ -39,7 +39,6 @@ function Form(props) {
                 </>
               )}
 
-
               <div className="set">
                 <label>
                   <b>What is your gender?</b>
@@ -54,7 +53,7 @@ function Form(props) {
                       onChange={(e) => form.set.gender(e.target.value)}
                     />
                     <label htmlFor="gender1">
-                      <span>Boy</span>
+                      Boy <span>(0.0)</span>
                     </label>
                   </div>
                   <div>
@@ -66,7 +65,7 @@ function Form(props) {
                       onChange={(e) => form.set.gender(e.target.value)}
                     />
                     <label htmlFor="gender2">
-                      <span>Girl</span>
+                      Girl <span>(1.0)</span>
                     </label>
                   </div>
                 </div>
@@ -86,7 +85,7 @@ function Form(props) {
                       onChange={(e) => form.set.age(e.target.value)}
                     />
                     <label htmlFor="age1">
-                      <span>1-5</span>
+                      1-5 <span>(5.0)</span>
                     </label>
                   </div>
                   <div>
@@ -98,7 +97,7 @@ function Form(props) {
                       onChange={(e) => form.set.age(e.target.value)}
                     />
                     <label htmlFor="age2">
-                      <span>6-10</span>
+                      6-10 <span>(4.0)</span>
                     </label>
                   </div>
                   <div>
@@ -110,7 +109,7 @@ function Form(props) {
                       onChange={(e) => form.set.age(e.target.value)}
                     />
                     <label htmlFor="age3">
-                      <span>11-15</span>
+                      11-15 <span>(2.0)</span>
                     </label>
                   </div>
                   <div>
@@ -122,7 +121,7 @@ function Form(props) {
                       onChange={(e) => form.set.age(e.target.value)}
                     />
                     <label htmlFor="age4">
-                      <span>16-20</span>
+                      16-20 <span>(1.0)</span>
                     </label>
                   </div>
                   <div>
@@ -134,7 +133,7 @@ function Form(props) {
                       onChange={(e) => form.set.age(e.target.value)}
                     />
                     <label htmlFor="age5">
-                      <span>21-25</span>
+                      21-25 <span>(0.0)</span>
                     </label>
                   </div>
                   <div>
@@ -146,7 +145,7 @@ function Form(props) {
                       onChange={(e) => form.set.age(e.target.value)}
                     />
                     <label htmlFor="age6">
-                      <span>26-30</span>
+                      26-30 <span>(3.0)</span>
                     </label>
                   </div>
                 </div>
@@ -166,7 +165,7 @@ function Form(props) {
                       onChange={(e) => form.set.education(e.target.value)}
                     />
                     <label htmlFor="education1">
-                      <span>University</span>
+                      University <span>(0.0)</span>
                     </label>
                   </div>
                   <div>
@@ -178,19 +177,19 @@ function Form(props) {
                       onChange={(e) => form.set.education(e.target.value)}
                     />
                     <label htmlFor="education2">
-                      <span>College</span>
+                      College <span>(1.0)</span>
                     </label>
                   </div>
                   <div>
                     <input
                       id="education3"
-                      name="eduction"
+                      name="education"
                       type="radio"
                       value={(form.data.education = "2.0")}
                       onChange={(e) => form.set.education(e.target.value)}
                     />
                     <label htmlFor="education3">
-                      <span>School</span>
+                      School <span>(2.0)</span>
                     </label>
                   </div>
                 </div>
@@ -210,7 +209,7 @@ function Form(props) {
                       onChange={(e) => form.set.institution(e.target.value)}
                     />
                     <label htmlFor="institution1">
-                      <span>Non Government</span>
+                      Non Government <span>(0.0)</span>
                     </label>
                   </div>
                   <div>
@@ -222,7 +221,7 @@ function Form(props) {
                       onChange={(e) => form.set.institution(e.target.value)}
                     />
                     <label htmlFor="institution2">
-                      <span>Government</span>
+                      Government <span>(1.0)</span>
                     </label>
                   </div>
                 </div>
@@ -242,7 +241,7 @@ function Form(props) {
                       onChange={(e) => form.set.student(e.target.value)}
                     />
                     <label htmlFor="student1">
-                      <span>Yes</span>
+                      Yes <span>(1.0)</span>
                     </label>
                   </div>
                   <div>
@@ -254,7 +253,7 @@ function Form(props) {
                       onChange={(e) => form.set.student(e.target.value)}
                     />
                     <label htmlFor="student2">
-                      <span>No</span>
+                      No <span>(0.0)</span>
                     </label>
                   </div>
                 </div>
@@ -274,7 +273,7 @@ function Form(props) {
                       onChange={(e) => form.set.location(e.target.value)}
                     />
                     <label htmlFor="location1">
-                      <span>Yes</span>
+                      Yes <span>(0.0)</span>
                     </label>
                   </div>
                   <div>
@@ -286,7 +285,7 @@ function Form(props) {
                       onChange={(e) => form.set.location(e.target.value)}
                     />
                     <label htmlFor="location2">
-                      <span>No</span>
+                      No <span>(1.0)</span>
                     </label>
                   </div>
                 </div>
@@ -306,7 +305,7 @@ function Form(props) {
                       onChange={(e) => form.set.load(e.target.value)}
                     />
                     <label htmlFor="load1">
-                      <span>Low</span>
+                      Low <span>(0.0)</span>
                     </label>
                   </div>
                   <div>
@@ -318,7 +317,7 @@ function Form(props) {
                       onChange={(e) => form.set.load(e.target.value)}
                     />
                     <label htmlFor="load2">
-                      <span>High</span>
+                      High <span>(1.0)</span>
                     </label>
                   </div>
                 </div>
@@ -338,7 +337,7 @@ function Form(props) {
                       onChange={(e) => form.set.financial(e.target.value)}
                     />
                     <label htmlFor="financial1">
-                      <span>Poor</span>
+                      Poor <span>(1.0)</span>
                     </label>
                   </div>
                   <div>
@@ -350,7 +349,7 @@ function Form(props) {
                       onChange={(e) => form.set.financial(e.target.value)}
                     />
                     <label htmlFor="financial2">
-                      <span>Mid</span>
+                      Mid <span>(0.0)</span>
                     </label>
                   </div>
                   <div>
@@ -362,7 +361,7 @@ function Form(props) {
                       onChange={(e) => form.set.financial(e.target.value)}
                     />
                     <label htmlFor="financial3">
-                      <span>Rich</span>
+                      Rich <span>(2.0)</span>
                     </label>
                   </div>
                 </div>
@@ -382,7 +381,7 @@ function Form(props) {
                       onChange={(e) => form.set.internet(e.target.value)}
                     />
                     <label htmlFor="internet1">
-                      <span>Wifi</span>
+                      Wifi <span>(0.0)</span>
                     </label>
                   </div>
                   <div>
@@ -394,7 +393,7 @@ function Form(props) {
                       onChange={(e) => form.set.internet(e.target.value)}
                     />
                     <label htmlFor="internet2">
-                      <span>Mobile Data</span>
+                      Mobile Data <span>(1.0)</span>
                     </label>
                   </div>
                 </div>
@@ -414,7 +413,7 @@ function Form(props) {
                       onChange={(e) => form.set.network(e.target.value)}
                     />
                     <label htmlFor="network1">
-                      <span>2G</span>
+                      2G <span>(2.0)</span>
                     </label>
                   </div>
                   <div>
@@ -426,7 +425,7 @@ function Form(props) {
                       onChange={(e) => form.set.network(e.target.value)}
                     />
                     <label htmlFor="network2">
-                      <span>3G</span>
+                      3G <span>(1.0)</span>
                     </label>
                   </div>
                   <div>
@@ -438,7 +437,7 @@ function Form(props) {
                       onChange={(e) => form.set.network(e.target.value)}
                     />
                     <label htmlFor="network3">
-                      <span>4G</span>
+                      4G <span>(0.0)</span>
                     </label>
                   </div>
                 </div>
@@ -461,7 +460,7 @@ function Form(props) {
                       onChange={(e) => form.set.duration(e.target.value)}
                     />
                     <label htmlFor="duration1">
-                      <span>0</span>
+                      0 <span>(2.0)</span>
                     </label>
                   </div>
                   <div>
@@ -473,7 +472,7 @@ function Form(props) {
                       onChange={(e) => form.set.duration(e.target.value)}
                     />
                     <label htmlFor="duration2">
-                      <span>1-3</span>
+                      1-3 <span>(1.0)</span>
                     </label>
                   </div>
                   <div>
@@ -485,7 +484,7 @@ function Form(props) {
                       onChange={(e) => form.set.duration(e.target.value)}
                     />
                     <label htmlFor="duration3">
-                      <span>3-6</span>
+                      3-6 <span>(0.0)</span>
                     </label>
                   </div>
                 </div>
@@ -505,7 +504,7 @@ function Form(props) {
                       onChange={(e) => form.set.lms(e.target.value)}
                     />
                     <label htmlFor="lms1">
-                      <span>Yes</span>
+                      Yes <span>(1.0)</span>
                     </label>
                   </div>
                   <div>
@@ -517,7 +516,7 @@ function Form(props) {
                       onChange={(e) => form.set.lms(e.target.value)}
                     />
                     <label htmlFor="lms2">
-                      <span>No</span>
+                      No <span>(0.0)</span>
                     </label>
                   </div>
                 </div>
@@ -537,7 +536,7 @@ function Form(props) {
                       onChange={(e) => form.set.device(e.target.value)}
                     />
                     <label htmlFor="device1">
-                      <span>Computer</span>
+                      Computer <span>(2.0)</span>
                     </label>
                   </div>
                   <div>
@@ -549,7 +548,7 @@ function Form(props) {
                       onChange={(e) => form.set.device(e.target.value)}
                     />
                     <label htmlFor="device2">
-                      <span>Mobile Device</span>
+                      Mobile Device <span>(1.0)</span>
                     </label>
                   </div>
                   <div>
@@ -561,7 +560,7 @@ function Form(props) {
                       onChange={(e) => form.set.device(e.target.value)}
                     />
                     <label htmlFor="device3">
-                      <span>Tablet</span>
+                      Tablet <span>(0.0)</span>
                     </label>
                   </div>
                 </div>
@@ -578,7 +577,6 @@ function Form(props) {
                   </button>
                 </div>
               </div>
-
             </form>
           </div>
         </div>

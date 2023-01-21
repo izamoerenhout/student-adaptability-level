@@ -31,12 +31,11 @@ function About() {
                 <h2>Why is the prediction reliable?</h2>
                 <p>
                   The data was collected by researchers through questionnaires
-                  in the region of Bangladesh. The dataset is from
+                  in the region of Bangladesh. The dataset is from (
                   <a href="https://www.kaggle.com/datasets/mdmahmudulhasansuzan/students-adaptability-level-in-online-education">
-                    {" "}
                     Kaggle
                   </a>
-                  .
+                  ).
                 </p>
               </div>
             </div>

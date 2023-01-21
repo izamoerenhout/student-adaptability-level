@@ -26,23 +26,19 @@ function Home() {
               >
                 <span>Click here to start</span>
               </Link>
-
-              
             </div>
 
             <img
-                src={student_tired}
-                alt="tired student"
-                className="img-tired"     
-              />
+              src={student_tired}
+              alt="tired student"
+              className="img-tired"
+            />
           </div>
 
           <div className="inside">
             <div className="info-text">
               <h3>How does this work?</h3>
-              <p>
-              Tekst hier!
-              </p>
+              <p>Tekst hier!</p>
 
               <Link
                 to="/about"
@@ -53,10 +49,10 @@ function Home() {
             </div>
 
             <img
-                src={student_chat}
-                alt="question"
-                className="img-chat"     
-              />
+              src={student_chat}
+              alt="question"
+              className="img-chat"
+            />
           </div>
         </div>
       </div>

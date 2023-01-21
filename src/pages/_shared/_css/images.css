@@ -18,4 +18,10 @@
 
 .img-shap {
     width: 85%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.clip {
+    padding: 20px;
 }
