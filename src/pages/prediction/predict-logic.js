@@ -55,8 +55,6 @@ function PredictLogic() {
 
     const response = await fetch("http://127.0.0.1:5041/api/predict", options);
     // const response = await fetch("https://iza.hcaid.nl/api/predict", options);
-    console.log(options);
-    console.log(response);
 
     const res = await response.json();
     console.log(res);

@@ -17,16 +17,6 @@ function Form(props) {
             <h2>Find out how well you can adapted to online education</h2>
 
             <form onSubmit={form.onSubmit}>
-              {/* <div className="row">
-                    <SelectOption title={ "What is your gender?" } options={ options_gender } update={ form.set.gender } />
-                </div> */}
-
-              {/* </form> */}
-
-              {/* <div className="px-lg-5 py-lg-5"> */}
-              {/* <form onSubmit={form.onSubmit}> */}
-              {/* <div className="row content-inside"> */}
-              {/* <div className="col-12"> */}
               {form.errors !== undefined && (
                 <>
                   <div
@@ -48,7 +38,7 @@ function Form(props) {
                   </div>
                 </>
               )}
-              {/* </div> */}
+
 
               <div className="set">
                 <label>
@@ -161,7 +151,6 @@ function Form(props) {
                   </div>
                 </div>
               </div>
-              {/* </div> */}
 
               <div className="set">
                 <label>
@@ -206,7 +195,7 @@ function Form(props) {
                   </div>
                 </div>
               </div>
-              
+
               <div className="set">
                 <label>
                   <b>What for type is your institution?</b>
@@ -239,446 +228,357 @@ function Form(props) {
                 </div>
               </div>
 
-              <div className="row content-inside">
-                <div className="col-md-12 col-lg-6">
-                  <label className="form-label">Are you an IT student?</label>
-                  <div className="row ml-1 mb-3">
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="student1"
-                        name="student"
-                        type="radio"
-                        value={(form.data.student = "1.0")}
-                        onChange={(e) => form.set.student(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="student1"
-                      >
-                        <span>Yes</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="student2"
-                        name="student"
-                        type="radio"
-                        value={(form.data.student = "0.0")}
-                        onChange={(e) => form.set.student(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="student2"
-                      >
-                        <span>No</span>
-                      </label>
-                    </div>
+              <div className="set">
+                <label>
+                  <b>Are you an IT student?</b>
+                </label>
+                <div className="group">
+                  <div className="first-option">
+                    <input
+                      id="student1"
+                      name="student"
+                      type="radio"
+                      value={(form.data.student = "1.0")}
+                      onChange={(e) => form.set.student(e.target.value)}
+                    />
+                    <label htmlFor="student1">
+                      <span>Yes</span>
+                    </label>
                   </div>
-                </div>
-                <div className="col-md-12 col-lg-6">
-                  <label className="form-label">
-                    Is your location in town?
-                  </label>
-                  <div className="row ml-1 mb-3">
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="location1"
-                        name="location"
-                        type="radio"
-                        value={(form.data.location = "0.0")}
-                        onChange={(e) => form.set.location(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="location1"
-                      >
-                        <span>Yes</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="location2"
-                        name="location"
-                        type="radio"
-                        value={(form.data.location = "1.0")}
-                        onChange={(e) => form.set.location(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="location2"
-                      >
-                        <span>No</span>
-                      </label>
-                    </div>
+                  <div>
+                    <input
+                      id="student2"
+                      name="student"
+                      type="radio"
+                      value={(form.data.student = "0.0")}
+                      onChange={(e) => form.set.student(e.target.value)}
+                    />
+                    <label htmlFor="student2">
+                      <span>No</span>
+                    </label>
                   </div>
                 </div>
               </div>
 
-              <div className="row content-inside">
-                <div className="col-md-12 col-lg-6">
-                  <label className="form-label">
-                    How is your level of load-shedding?
-                  </label>
-                  <div className="row ml-1 mb-3">
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="load1"
-                        name="load"
-                        type="radio"
-                        value={(form.data.load = "0.0")}
-                        onChange={(e) => form.set.load(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="load1"
-                      >
-                        <span>Low</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="load2"
-                        name="load"
-                        type="radio"
-                        value={(form.data.load = "1.0")}
-                        onChange={(e) => form.set.load(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="load2"
-                      >
-                        <span>High</span>
-                      </label>
-                    </div>
+              <div className="set">
+                <label>
+                  <b>Is your location in town?</b>
+                </label>
+                <div className="group">
+                  <div className="first-option">
+                    <input
+                      id="location1"
+                      name="location"
+                      type="radio"
+                      value={(form.data.location = "0.0")}
+                      onChange={(e) => form.set.location(e.target.value)}
+                    />
+                    <label htmlFor="location1">
+                      <span>Yes</span>
+                    </label>
                   </div>
-                </div>
-                <div className="col-md-12 col-lg-6">
-                  <label className="form-label">
-                    How is your financial condition?
-                  </label>
-                  <div className="row ml-1 mb-3">
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="financial1"
-                        name="financial"
-                        type="radio"
-                        value={(form.data.financial = "1.0")}
-                        onChange={(e) => form.set.financial(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="financial1"
-                      >
-                        <span>Poor</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="financial2"
-                        name="financial"
-                        type="radio"
-                        value={(form.data.financial = "0.0")}
-                        onChange={(e) => form.set.financial(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="financial2"
-                      >
-                        <span>Mid</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="financial3"
-                        name="financial"
-                        type="radio"
-                        value={(form.data.financial = "2.0")}
-                        onChange={(e) => form.set.financial(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="financial3"
-                      >
-                        <span>Rich</span>
-                      </label>
-                    </div>
+                  <div>
+                    <input
+                      id="location2"
+                      name="location"
+                      type="radio"
+                      value={(form.data.location = "1.0")}
+                      onChange={(e) => form.set.location(e.target.value)}
+                    />
+                    <label htmlFor="location2">
+                      <span>No</span>
+                    </label>
                   </div>
                 </div>
               </div>
 
-              <div className="row content-inside">
-                <div className="col-md-12 col-lg-6">
-                  <label className="form-label">
-                    Which type of internet do you use?
-                  </label>
-                  <div className="row ml-1 mb-3">
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="internet1"
-                        name="internet"
-                        type="radio"
-                        value={(form.data.internet = "0.0")}
-                        onChange={(e) => form.set.internet(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="internet1"
-                      >
-                        <span>Wifi</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="internet2"
-                        name="internet"
-                        type="radio"
-                        value={(form.data.internet = "1.0")}
-                        onChange={(e) => form.set.internet(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="internet2"
-                      >
-                        <span>Mobile Data</span>
-                      </label>
-                    </div>
+              <div className="set">
+                <label>
+                  <b>How is your level of load-shedding?</b>
+                </label>
+                <div className="group">
+                  <div className="first-option">
+                    <input
+                      id="load1"
+                      name="load"
+                      type="radio"
+                      value={(form.data.load = "0.0")}
+                      onChange={(e) => form.set.load(e.target.value)}
+                    />
+                    <label htmlFor="load1">
+                      <span>Low</span>
+                    </label>
                   </div>
-                </div>
-                <div className="col-md-12 col-lg-6">
-                  <label className="form-label">
-                    Which type of network do you use?
-                  </label>
-                  <div className="row ml-1 mb-3">
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="network1"
-                        name="network"
-                        type="radio"
-                        value={(form.data.network = "2.0")}
-                        onChange={(e) => form.set.network(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="network1"
-                      >
-                        <span>2G</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="network2"
-                        name="network"
-                        type="radio"
-                        value={(form.data.network = "1.0")}
-                        onChange={(e) => form.set.network(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="network2"
-                      >
-                        <span>3G</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="network3"
-                        name="network"
-                        type="radio"
-                        value={(form.data.network = "0.0")}
-                        onChange={(e) => form.set.network(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="network3"
-                      >
-                        <span>4G</span>
-                      </label>
-                    </div>
+                  <div>
+                    <input
+                      id="load2"
+                      name="load"
+                      type="radio"
+                      value={(form.data.load = "1.0")}
+                      onChange={(e) => form.set.load(e.target.value)}
+                    />
+                    <label htmlFor="load2">
+                      <span>High</span>
+                    </label>
                   </div>
                 </div>
               </div>
 
-              <div className="row content-inside">
-                <div className="col-md-12 col-lg-6">
-                  <label className="form-label">
+              <div className="set">
+                <label>
+                  <b>How is your financial condition?</b>
+                </label>
+                <div className="group">
+                  <div className="first-option">
+                    <input
+                      id="financial1"
+                      name="financial"
+                      type="radio"
+                      value={(form.data.financial = "1.0")}
+                      onChange={(e) => form.set.financial(e.target.value)}
+                    />
+                    <label htmlFor="financial1">
+                      <span>Poor</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="financial2"
+                      name="financial"
+                      type="radio"
+                      value={(form.data.financial = "0.0")}
+                      onChange={(e) => form.set.financial(e.target.value)}
+                    />
+                    <label htmlFor="financial2">
+                      <span>Mid</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="financial3"
+                      name="financial"
+                      type="radio"
+                      value={(form.data.financial = "2.0")}
+                      onChange={(e) => form.set.financial(e.target.value)}
+                    />
+                    <label htmlFor="financial3">
+                      <span>Rich</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div className="set">
+                <label>
+                  <b>Which type of internet do you use?</b>
+                </label>
+                <div className="group">
+                  <div className="first-option">
+                    <input
+                      id="internet1"
+                      name="internet"
+                      type="radio"
+                      value={(form.data.internet = "0.0")}
+                      onChange={(e) => form.set.internet(e.target.value)}
+                    />
+                    <label htmlFor="internet1">
+                      <span>Wifi</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="internet2"
+                      name="internet"
+                      type="radio"
+                      value={(form.data.internet = "1.0")}
+                      onChange={(e) => form.set.internet(e.target.value)}
+                    />
+                    <label htmlFor="internet2">
+                      <span>Mobile Data</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div className="set">
+                <label>
+                  <b>Which type of network do you use?</b>
+                </label>
+                <div className="group">
+                  <div className="first-option">
+                    <input
+                      id="network1"
+                      name="network"
+                      type="radio"
+                      value={(form.data.network = "2.0")}
+                      onChange={(e) => form.set.network(e.target.value)}
+                    />
+                    <label htmlFor="network1">
+                      <span>2G</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="network2"
+                      name="network"
+                      type="radio"
+                      value={(form.data.network = "1.0")}
+                      onChange={(e) => form.set.network(e.target.value)}
+                    />
+                    <label htmlFor="network2">
+                      <span>3G</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="network3"
+                      name="network"
+                      type="radio"
+                      value={(form.data.network = "0.0")}
+                      onChange={(e) => form.set.network(e.target.value)}
+                    />
+                    <label htmlFor="network3">
+                      <span>4G</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div className="set">
+                <label>
+                  <b>
                     What is the average duration of your classes on a daily
                     bases?
-                  </label>
-                  <div className="row ml-1 mb-3">
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="duration1"
-                        name="duration"
-                        type="radio"
-                        value={(form.data.duration = "2.0")}
-                        onChange={(e) => form.set.duration(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="duration1"
-                      >
-                        <span>0</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="duration2"
-                        name="duration"
-                        type="radio"
-                        value={(form.data.duration = "1.0")}
-                        onChange={(e) => form.set.duration(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="duration2"
-                      >
-                        <span>1-3</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="duration3"
-                        name="duration"
-                        type="radio"
-                        value={(form.data.duration = "0.0")}
-                        onChange={(e) => form.set.duration(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="duration3"
-                      >
-                        <span>3-6</span>
-                      </label>
-                    </div>
+                  </b>
+                </label>
+                <div className="group">
+                  <div className="first-option">
+                    <input
+                      id="duration1"
+                      name="duration"
+                      type="radio"
+                      value={(form.data.duration = "2.0")}
+                      onChange={(e) => form.set.duration(e.target.value)}
+                    />
+                    <label htmlFor="duration1">
+                      <span>0</span>
+                    </label>
                   </div>
-                </div>
-                <div className="col-md-12 col-lg-6">
-                  <label className="form-label">
-                    Does your institution own LM's availability?
-                  </label>
-                  <div className="row ml-1 mb-3">
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="lms1"
-                        name="lms"
-                        type="radio"
-                        value={(form.data.lms = "1.0")}
-                        onChange={(e) => form.set.lms(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="lms1"
-                      >
-                        <span>Yes</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="lms2"
-                        name="lms"
-                        type="radio"
-                        value={(form.data.lms = "0.0")}
-                        onChange={(e) => form.set.lms(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="lms2"
-                      >
-                        <span>No</span>
-                      </label>
-                    </div>
+                  <div>
+                    <input
+                      id="duration2"
+                      name="duration"
+                      type="radio"
+                      value={(form.data.duration = "1.0")}
+                      onChange={(e) => form.set.duration(e.target.value)}
+                    />
+                    <label htmlFor="duration2">
+                      <span>1-3</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="duration3"
+                      name="duration"
+                      type="radio"
+                      value={(form.data.duration = "0.0")}
+                      onChange={(e) => form.set.duration(e.target.value)}
+                    />
+                    <label htmlFor="duration3">
+                      <span>3-6</span>
+                    </label>
                   </div>
                 </div>
               </div>
 
-              <div className="row content-inside">
-                <div className="col-md-12 col-lg-6">
-                  <label className="form-label">
-                    Which type of device do you use for study?
-                  </label>
-                  <div className="row ml-1 mb-3">
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="device1"
-                        name="device"
-                        type="radio"
-                        value={(form.data.device = "2.0")}
-                        onChange={(e) => form.set.device(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="device1"
-                      >
-                        <span>Computer</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="device2"
-                        name="device"
-                        type="radio"
-                        value={(form.data.device = "1.0")}
-                        onChange={(e) => form.set.device(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="device2"
-                      >
-                        <span>Mobile Device</span>
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio pr-3">
-                      <input
-                        className="custom-control-input"
-                        id="device3"
-                        name="device"
-                        type="radio"
-                        value={(form.data.device = "0.0")}
-                        onChange={(e) => form.set.device(e.target.value)}
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="device3"
-                      >
-                        <span>Tablet</span>
-                      </label>
-                    </div>
+              <div className="set">
+                <label>
+                  <b>Does your institution own LM's availability?</b>
+                </label>
+                <div className="group">
+                  <div className="first-option">
+                    <input
+                      id="lms1"
+                      name="lms"
+                      type="radio"
+                      value={(form.data.lms = "1.0")}
+                      onChange={(e) => form.set.lms(e.target.value)}
+                    />
+                    <label htmlFor="lms1">
+                      <span>Yes</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="lms2"
+                      name="lms"
+                      type="radio"
+                      value={(form.data.lms = "0.0")}
+                      onChange={(e) => form.set.lms(e.target.value)}
+                    />
+                    <label htmlFor="lms2">
+                      <span>No</span>
+                    </label>
                   </div>
                 </div>
               </div>
 
-              <div className="text-center">
-                <button
-                  className="btn"
-                  color="#af8fe9"
-                  type="submit"
-                >
-                  <span>Predict</span>
-                </button>
+              <div className="set">
+                <label>
+                  <b>Which type of device do you use for study?</b>
+                </label>
+                <div className="group">
+                  <div className="first-option">
+                    <input
+                      id="device1"
+                      name="device"
+                      type="radio"
+                      value={(form.data.device = "2.0")}
+                      onChange={(e) => form.set.device(e.target.value)}
+                    />
+                    <label htmlFor="device1">
+                      <span>Computer</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="device2"
+                      name="device"
+                      type="radio"
+                      value={(form.data.device = "1.0")}
+                      onChange={(e) => form.set.device(e.target.value)}
+                    />
+                    <label htmlFor="device2">
+                      <span>Mobile Device</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="device3"
+                      name="device"
+                      type="radio"
+                      value={(form.data.device = "0.0")}
+                      onChange={(e) => form.set.device(e.target.value)}
+                    />
+                    <label htmlFor="device3">
+                      <span>Tablet</span>
+                    </label>
+                  </div>
+                </div>
               </div>
-              {/* </form> */}
-              {/* </div> */}
+
+              <div className="set">
+                <div className="text-center">
+                  <button
+                    className="btn"
+                    color="#af8fe9"
+                    type="submit"
+                  >
+                    <span>Predict</span>
+                  </button>
+                </div>
+              </div>
+
             </form>
           </div>
         </div>
