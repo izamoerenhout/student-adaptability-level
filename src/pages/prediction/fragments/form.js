@@ -4,7 +4,7 @@ function Form(props) {
   return (
     <>
       <div className="header">
-        <div className="container">
+        <div className="container predict">
           <h1>To make a prediction</h1>
           <div className="card bg-white pb-3">
             <h2 className="display-2 mb-0">
@@ -22,7 +22,7 @@ function Form(props) {
                         >
                           <b>Oeps.. something went wrong:</b>
                           {form.errors.map((error, index) => {
-                            return <div key={index}> [-] {error} </div>;
+                            return <div className="form-error" key={index}> [-] {error} </div>;
                           })}
                         </div>
                       </>

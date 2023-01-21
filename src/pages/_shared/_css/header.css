@@ -9,25 +9,28 @@
     padding: 0px 15px;
 }
 
-.header .container .row {
-    margin-bottom: 10px;
+.header .container .info-text {
+    width: 60%;
+    padding: 15px 25px 75px
 }
+
+.header .container .predict {
+    padding-top: 15px;
+}
+
 
 .header .container h1 {
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
     text-shadow: 0 1px 8px rgb(0 0 0 / 10%);
 }
 
 .header .container h3 {
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
     color: rgb(77, 76, 76);
     text-shadow: 0 1px 8px rgb(0 0 0 / 10%);
 }
 
 .header .container p {
-    font-family: 'Roboto', sans-serif;
     text-shadow: 0 1px 8px rgb(0 0 0 / 30%);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -35,21 +38,17 @@
 
 .header .container .btn {
     /* min-width: 250px; */
-    /* position: relative; */
+    position: relative;
     background-color: #af8fe9;
     color:  white;
-    padding-block: 5px;
+    padding: 20px;
+    padding-block: 7px;
     border-radius: 10px;
-}
-
-.header .container .btn.btn-upload {
-    min-width: 135px;
 }
 
 .header .container .btn span {
     /* margin-left: 25px; */
     padding: 5px;
-    font-family: 'Roboto', sans-serif;
     text-shadow: 0 1px 8px rgb(0 0 0 / 30%);
 }
 

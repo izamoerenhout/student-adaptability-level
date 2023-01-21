@@ -10,21 +10,26 @@ function Predict() {
     <>
       <div className="header">
         <div className="container">
-              {/* SHOW PREDICTION FORM */}
-              {result.res === undefined && !values.isLoading && (
-                <Form logic={form} />
-              )}
+          {/* SHOW PREDICTION FORM */}
+          {result.res === undefined && !values.isLoading && (
+            <Form logic={form} />
+          )}
 
-              {/* SHOW RESULT FROM PREDICTION */}
-              {result.res !== undefined && (
-                <Result logic={result} />
-              )}
+          {/* SHOW RESULT FROM PREDICTION */}
+          {result.res !== undefined && <Result logic={result} />}
 
-              {/* SHOW LOADING SPINNER */}
-              {values.isLoading && (
-                <Loading logic={{ form, values }} />
-              )}
+          {/* SHOW LOADING SPINNER */}
+          {values.isLoading && <Loading logic={{ form, values }} />}
 
+          {values.isFailed && (
+            <div
+              className="alert alert-danger"
+              role="alert"
+            >
+              Something went wrong!
+              {/* {result.res["errors"]} */}
+            </div>
+          )}
         </div>
       </div>
     </>

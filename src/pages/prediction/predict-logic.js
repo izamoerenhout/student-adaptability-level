@@ -7,6 +7,7 @@ function PredictLogic() {
 
   // Show loading
   const [isLoading, setIsLoading] = useState(false);
+  const [isFailed, setIsFailed] = useState(false);
 
   // Features
   const [gender, setGender] = useState(undefined);
@@ -28,7 +29,7 @@ function PredictLogic() {
     // The form has default behavior that we don't need
     event.preventDefault();
 
-    // Show loading bar
+    setIsFailed(false);
     setIsLoading(true);
 
     // Get the file so when can include in our prediction request
@@ -53,6 +54,7 @@ function PredictLogic() {
     };
 
     const response = await fetch("http://127.0.0.1:5041/api/predict", options);
+    // const response = await fetch("https://iza.hcaid.nl/api/predict", options);
     console.log(options);
     console.log(response);
 
@@ -62,6 +64,8 @@ function PredictLogic() {
     if (res.errors.length > 0) {
       console.log("error");
       setErrors(res.errors);
+      setIsLoading(false);
+      setIsFailed(true);
       return;
     }
 
@@ -84,6 +88,7 @@ function PredictLogic() {
     },
     values: {
       isLoading,
+      isFailed
     },
     form: {
       errors,
