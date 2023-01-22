@@ -105,7 +105,7 @@ function Result(props) {
 
             <div className="clip">
               <iframe
-                width="420"
+                width="520"
                 height="315"
                 src="https://www.youtube.com/embed/SMpDr6pVNfE"
                 alt="tips for online school"
