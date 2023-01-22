@@ -492,7 +492,7 @@ function Form(props) {
 
               <div className="set">
                 <label>
-                  <b>Does your institution own LM's availability?</b>
+                  <b>Does your institution own LMS (learning management systems) availability?</b>
                 </label>
                 <div className="group">
                   <div className="first-option">
