@@ -18,7 +18,7 @@ function Template(props) {
             </Link>
             <Link
               to="/predict"
-              className="navbar-link"
+              className="navbar-link"    
             >
               Tool
             </Link>

@@ -14,7 +14,7 @@ function Result(props) {
               Don't worry if the result is low or moderated. It is almost
               impossible to score high on the level of attention in online
               classes. For example, Education First (
-              <a href="https://www.ef.nl/blog/language/online-lessen-vs-naar-school-wat-is-beter/">
+              <a target="_blank" href="https://www.ef.nl/blog/language/online-lessen-vs-naar-school-wat-is-beter/">
                 EF
               </a>
               ) writes that face-to-face learning wins over taking the lesson

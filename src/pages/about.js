@@ -41,7 +41,7 @@ function About() {
                 <p>
                   The data was collected by researchers through questionnaires
                   in the region of Bangladesh. The dataset is from {" "}
-                  <a href="https://www.kaggle.com/datasets/mdmahmudulhasansuzan/students-adaptability-level-in-online-education">
+                  <a target="_blank" href="https://www.kaggle.com/datasets/mdmahmudulhasansuzan/students-adaptability-level-in-online-education">
                     Kaggle
                   </a>
                   .
