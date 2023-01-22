@@ -8,7 +8,7 @@ A student's level of adaptability can be classified into three categories, namel
 * Moderated
 * High
 
-### Example of Low Adaptability Level
+### Example for Low Adaptability Level
 ```json
 {
     "Gender": 0.0, 
@@ -27,7 +27,7 @@ A student's level of adaptability can be classified into three categories, namel
 }
 ```
 
-### Example of Moderated Adaptability Level
+### Example for Moderated Adaptability Level
 ```json
 {
     "Gender": 1.0, 
@@ -46,7 +46,7 @@ A student's level of adaptability can be classified into three categories, namel
 }
 ```
 
-### Example of High Adaptability Level
+### Example for High Adaptability Level
 ```json
 {
     "Gender": 1.0, 
