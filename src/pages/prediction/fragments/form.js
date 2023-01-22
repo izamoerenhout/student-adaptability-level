@@ -1,12 +1,5 @@
-// import SelectOption from "./select-option";
-
 function Form(props) {
   const form = props.logic;
-
-  //   const options_gender = [
-  //     { value: "0.0", label: "Boy" },
-  //     { value: "1.0", label: "Girl" },
-  //   ];
 
   return (
     <>

@@ -42,7 +42,6 @@
 }
 
 .header .container .btn {
-    /* min-width: 250px; */
     position: relative;
     background-color: #af8fe9;
     color:  white;
@@ -52,7 +51,6 @@
 }
 
 .header .container .btn span {
-    /* margin-left: 25px; */
     padding: 5px;
     color: white;
     font-weight: bold;

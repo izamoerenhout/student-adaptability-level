@@ -53,11 +53,9 @@ function PredictLogic() {
       }),
     };
 
-    // const response = await fetch("http://127.0.0.1:5041/api/predict", options);
     const response = await fetch("https://iza.hcaid.nl/api/predict", options);
 
     const res = await response.json();
-    console.log(res);
 
     if (res.errors.length > 0) {
       console.log("error");

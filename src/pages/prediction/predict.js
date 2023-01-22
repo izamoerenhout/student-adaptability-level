@@ -27,7 +27,6 @@ function Predict() {
               role="alert"
             >
               Something went wrong!
-              {/* {result.res["errors"]} */}
             </div>
           )}
         </div>
