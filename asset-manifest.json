@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/student-adaptability-level/static/css/main.3544982c.css",
-    "main.js": "/student-adaptability-level/static/js/main.e8714a7b.js",
+    "main.js": "/student-adaptability-level/static/js/main.d29b0380.js",
     "static/media/student.png": "/student-adaptability-level/static/media/student.d3c23248d7cd91514408.png",
     "index.html": "/student-adaptability-level/index.html",
     "main.3544982c.css.map": "/student-adaptability-level/static/css/main.3544982c.css.map",
-    "main.e8714a7b.js.map": "/student-adaptability-level/static/js/main.e8714a7b.js.map"
+    "main.d29b0380.js.map": "/student-adaptability-level/static/js/main.d29b0380.js.map"
   },
   "entrypoints": [
     "static/css/main.3544982c.css",
-    "static/js/main.e8714a7b.js"
+    "static/js/main.d29b0380.js"
   ]
 }
